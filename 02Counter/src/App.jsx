@@ -2,12 +2,28 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  // the useState hook always gives two values in an array 
+  // the useState hook always gives two values in an array
   // and updates the initial variable on the UI
   let [counter, setCounter] = useState(5);
 
   const addValue = () => {
+    // assignment
+    if (counter === 20) {
+      setCounter(20);
+      return;
+    }
     counter++;
+
+    setCounter(counter);
+  };
+
+  const removeValue = () => {
+    // assignment
+    if (counter <= 0) {
+      setCounter(0);
+      return;
+    }
+    counter--;
     setCounter(counter);
   };
 
@@ -17,7 +33,7 @@ function App() {
 
       <button onClick={addValue}>Add Value</button>
       <br />
-      <button>Remove val</button>
+      <button onClick={removeValue}>Remove val</button>
     </>
   );
 }
