@@ -52,3 +52,7 @@ function App() {
 }
 
 export default App;
+
+/** NOTE: onClick method expects a function (call back function) so we need to give a call back function or a function reference
+ * if we call a function using parenthesis() in onClick it will return something and onClick want some function to be performed
+ * when clicked so we give setColor in a call back function or else the setColor will return something to onClick */
