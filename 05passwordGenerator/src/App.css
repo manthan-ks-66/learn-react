@@ -1,0 +1,7 @@
+.btn-copy:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
