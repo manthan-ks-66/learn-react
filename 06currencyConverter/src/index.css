@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root {
+  background-image: url("https://images.pexels.com/photos/28100119/pexels-photo-28100119/free-photo-of-housing-estate-model-business-finance-cash-banknotes-euro-currency.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
